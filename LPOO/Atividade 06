@@ -1,0 +1,99 @@
+Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+
+Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+
+Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+
+ATENÇÃO: As notas por turma não podem se repetir.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+  
+            //turma      aluno      Nome
+char Nomes   [3]       [25]       [50];
+
+            //turma      nota
+float Nota   [3]       [25];
+
+
+char turma = "A";
+
+int NA = 0;   // Numero de aprovados temporario
+int ATA = 0;  // Numero de aprovados turma A
+int ATB = 0;  // Numero de aprovados turma B
+int ATC = 0;  // Numero de aprovados turma C
+
+float MNTA = 0;  // Numero de aprovados turma A
+float MNTB = 0;  // Numero de aprovados turma B
+float MNTC = 0;  // Numero de aprovados turma C
+
+int iTA = 0;     // indice do aluno com maior nota turma A
+int iTB = 0;     // indice do aluno com maior nota turma B
+int iTC = 0;     // indice do aluno com maior nota turma C
+
+for(int j = 0; j < 3; j++)
+{
+	for(int i = 0; i < 25; i++)
+	{
+		cout << "Preencha para a turma " << turma << endl;
+
+		cout << "Insira o Nome do aluno " << i + 1 << ":" << endl;
+		cin >> Nomes[j][i];
+
+		cout << "Insira a Nota do aluno " << i + 1 << ":" << endl;
+		cin >> Nota[j][i];
+
+		if(Nota[j][i] >= 7.0f)
+		{
+			NA++;
+		}
+
+		if(j == 0 && Nota[j][i] > MNTA)
+		{
+			MNTA = Nota[j][i];
+			iTA = i;
+		}
+		else if(j == 1 && Nota[j][i] > MNTB)
+		{
+			MNTB = Nota[j][i];
+			iTB = i;
+		}
+		else if(j == 2 && Nota[j][i] > MNTC)
+		{
+			MNTC = Nota[j][i];
+			iTC = i;
+		}
+
+		system("CLS");
+	}
+
+	if(j == 0)
+	{
+		ATA = NA;
+		turma = "B";
+	}
+	else if (j == 1)
+	{
+		ATB = NA;
+		turma = "C";
+	}
+	else
+	{
+		ATC = NA;
+	}
+
+	NA = 0;
+}
+
+cout << "Número de aprovados da truma A:" << ATA << endl;
+cout << "Número de aprovados da truma B:" << ATB << endl;
+cout << "Número de aprovados da truma C:" << ATC << endl;
+
+cout << "Nota mais alta turma A:" << MNTA << endl;
+cout << "Nota mais alta turma B:" << MNTB << endl;
+cout << "Nota mais alta turma C:" << MNTC << endl;
+
+cout << "Aluno ou um dos alunos com maior nota na turma A:" << Nomes[0][iTA] << endl;
+cout << "Aluno ou um dos alunos com maior nota na turma B:" << Nomes[1][iTB] << endl;
+cout << "Aluno ou um dos alunos com maior nota na turma C:" << Nomes[2][iTC] << endl;

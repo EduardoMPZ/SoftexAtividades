@@ -1,0 +1,31 @@
+Desenvolva um programa que utiliza o nome de um aluno, duas notas e a quantidade de faltas que ele teve. Conclua se o aluno está aprovado ou reprovado de acordo com as especificações:
+
+- Se a média do aluno for menor que sete, o sistema deve informar o nome do aluno e que ele está reprovado;
+- Se o aluno possuir mais de três faltas, o sistema deve informar o nome do aluno e que ele está reprovado;
+- Se a média do aluno for maior ou igual a sete, o sistema deve informar o nome do aluno e que ele está aprovado.
+
+No sistema, todos os valores devem estar armazenados em variáveis.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+char Nome[50];
+float Nota;
+int Nfaltas;
+
+cout << "insira o nome do aluno" << endl;
+cin >> Nome;
+cout << "insira a nota do aluno" << endl;
+cin >> Nota;
+cout << "insira o numero de faltas do aluno" << endl;
+cin >> Nfaltas;
+
+if(Nota >= 0.7 && Nfaltas < 4)
+{
+	cout << "Aprovado";
+}
+else
+{
+	cout << "Reprovado";
+}

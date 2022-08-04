@@ -1,0 +1,59 @@
+Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:
+
+- Nome
+- Endereço
+- Cidade
+- CPF
+- RG
+- Idade
+- Nome do pai
+- Nome da mãe
+- Peso
+- Renda bruta
+
+Apresente as informações solicitadas no final do cadastro.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+char Nome[50];
+char Endereço[50];
+char Cidade[50];
+int CPF;
+int RG;
+int Idade;
+char Nome do pai[50];
+char Nome do mãe[50];
+float Peso;
+float Renda bruta;
+
+cout << "insira o Nome:" << endl;
+cin >> Nome;
+cout << "insira o Endereço:" << endl;
+cin >> Endereço;
+cout << "insira o Cidade:" << endl;
+cin >> Cidade;
+cout << "insira o CPF:" << endl;
+cin >> CPF;
+cout << "insira o RG:" << endl;
+cin >> RG;
+cout << "insira o Nome do pai:" << endl;
+cin >> Nome do pai;
+cout << "insira o Nome do mãe:" << endl;
+cin >> Nome do mãe;
+cout << "insira o Peso:\n" << endl;
+cin >> Peso;
+cout << "insira o Renda bruta:" << endl;
+cin >> Renda bruta;
+
+cout << "Confirme os dados" << endl;
+cout << "Nome:" << Nome << endl;
+cout << "Endereço:" << Endereço << endl;
+cout << "Cidade:" << Cidade << endl;
+cout << "CPF:" << CPF << endl;
+cout << "RG:" << RG << endl;
+cout << "Nome do pai:" << Nome do pai << endl;
+cout << "Nome do mãe:" << Nome do mãe << endl;
+cout << "Peso:" << Peso << endl;
+cout << "Renda bruta:" << Renda bruta << endl;

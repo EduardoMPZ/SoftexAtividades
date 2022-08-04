@@ -1,0 +1,198 @@
+Elabore um algoritmo que possa descobrir, através de perguntas e respostas, qual meio de transporte o usuário está pensando.
+O usuário deverá escolher uma das seguintes opções:
+
+- Trator
+- Moto
+- Bicicleta
+- Trem
+- Carro
+- Caminhão
+- Ônibus
+- Paraquedas
+- Balão
+- Avião
+- Helicóptero
+- Submarino
+- Barco
+- Navio
+- Lancha
+
+Para chegar ao resultado, só devem ser usadas perguntas que retornem "Sim" ou "Não".
+
+Exemplo:
+É terrestre? Sim.
+Cabe apenas uma pessoa? Sim.
+É pesado? Não.
+Tem pedal? Sim.
+Então, o transporte escolhido foi a bicicleta.
+
+Para chegar ao resultado de cada uma das opções, use o modelo ilustrado na imagem em anexo. 
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+bool resposta;
+
+cout << "É terrestre? (1 para sim, 0 para não)" << endl;
+cin >> resposta;
+
+if(resposta)
+{	//Caso seja terrestre
+
+	cout << "Cabe apenas uma pessoa? (1 para sim, 0 para não)" << endl;
+	cin >> resposta;
+	
+	if(resposta)
+	{
+		
+		cout << "é pesado? (1 para sim, 0 para não)" << endl;
+		cin >> resposta;
+
+		if(resposta)
+		{	
+			cout << "Trator";
+		}
+
+		else
+		{
+			cout << "Bicicleta";
+		}
+
+	}
+	
+	else
+	{
+		cout << "Usa capacete? (1 para sim, 0 para não)" << endl;
+		cin >> resposta;
+
+		if(resposta)
+		{
+			cout << "Moto";
+		}
+
+		else
+		{
+			cout << "Usa trilho? (1 para sim, 0 para não)" << endl;
+			cin >> resposta;
+
+			if(resposta)
+			{
+				cout << "Trem";
+			}
+
+			else
+			{
+				
+				cout << "é alto? (1 para sim, 0 para não)" << endl;
+				cin >> resposta;
+
+				if(resposta)
+				{
+					cout << "Usa carroceria? (1 para sim, 0 para não)" << endl;
+					cin >> resposta;
+
+					if(resposta)
+					{
+						cout << "caminhão";
+					}
+
+					else
+					{
+						cout << "Ônibus";
+					}
+				}
+
+				else
+				{
+					cout << "Carro";
+				}
+			}
+		}
+	}	
+}
+
+else
+{	//Caso não seja terrestre
+
+	cout << "É aéreo? (1 para sim, 0 para não)" << endl;
+	cin >> resposta;
+
+	if(resposta)
+	{	//Caso seja aereo
+		
+		cout << "Precisa pular? (1 para sim, 0 para não)" << endl;
+		cin >> resposta;
+
+		if(resposta)
+		{	
+			cout << "Asa delta";
+		}
+	
+		else
+		{	
+			cout << "É devagar? (1 para sim, 0 para não)" << endl;
+			cin >> resposta;
+
+			if(resposta)
+			{	
+				cout << "Balão";
+			}
+	
+			else
+			{	
+				cout << "Possui asas fixas? (1 para sim, 0 para não)" << endl;
+				cin >> resposta;
+
+				if(resposta)
+				{	
+					cout << "Avião";
+				}
+	
+				else
+				{	
+					cout << "Helicóptero";
+				}
+			}
+		}
+	}
+	
+	else
+	{	//Caso não seja aereo
+
+		cout << "É coberto de água? (1 para sim, 0 para não)" << endl;
+		cin >> resposta;
+
+		if(resposta)
+		{	
+			cout << "Submarino";
+		}
+	
+		else
+		{	
+			cout << "Possui vela? (1 para sim, 0 para não)" << endl;
+			cin >> resposta;
+
+			if(resposta)
+			{	
+				cout << "Barco";
+			}
+	
+			else
+			{	
+				cout << "É alto? (1 para sim, 0 para não)" << endl;
+				cin >> resposta;
+
+				if(resposta)
+				{	
+					cout << "Navio";
+				}
+	
+				else
+				{	
+					cout << "Lancha";
+				}
+			}
+		}
+	}
+}
