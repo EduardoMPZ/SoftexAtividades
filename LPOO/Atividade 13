@@ -1,0 +1,45 @@
+Desenvolva um código que simule uma eleição com três candidatos.
+- candidato_X => 889
+- candidato_Y => 847
+- candidato_Z => 515
+- branco => 0
+
+O código deve perguntar se deseja finalizar a votação depois do voto. Caso o número do voto não corresponda a nenhum candidato ou seja branco, ele deve ser tratado como nulo. Se for inserido um texto ao invés de número, o código deve retornar uma mensagem para votar novamente.
+
+Quando a votação for finalizada, o código deverá mostrar o vencedor, aquele com o maior número de votos e, também, a quantidade de votos de cada candidato, os brancos e nulos 
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.  
+
+Resposta:
+
+int escolha, votos889 = 0, vitos847 = 0, votos515 = 0;
+char res;
+
+while(true)
+{
+	cout << "escolha o candidato\n - candidato_X => 889\n - candidato_Y => 847\n - candidato_Z => 515\n - branco => 0" << endl;
+	cin >> escolha;
+
+	switch(escolha) {
+     case 889:
+        votos889++;
+        break;
+     case 847:
+        votos847++;
+        break;
+     case 515:
+        votos515++;
+        break;
+     default:
+        cout << "valor invalidos" << endl;
+     }
+        
+	cout << "finalizar?" << endl;
+	cin >> res;
+    if(res == S)
+        break;
+}
+
+cout << "O candidato X recebeu: " << votos889 << "votos" << endl;
+cout << "O candidato Y recebeu: " << votos847 << "votos" << endl;
+cout << "O candidato Z recebeu: " << votos515 << "votos" << endl;

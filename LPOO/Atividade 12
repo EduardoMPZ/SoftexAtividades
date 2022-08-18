@@ -1,0 +1,33 @@
+Desenvolva um programa que recebe do usuário nome completo e ano de nascimento que seja entre 1922 e 2021. A partir dessas informações, o sistema mostrará o nome do usuário e a idade que completou, ou completará, no ano atual (2022).
+
+Caso o usuário não digite um número ou apareça um inválido no campo do ano, o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+int dia, mes, ano;
+char nome[50];
+
+cout << "digite o nome completo" << endl;
+cin >> nome;
+
+while(true)
+{
+	cout << "digite a data de nascimento" << endl;
+	cout << "dia" << endl;
+	cin >> dia;
+	cout << "mes" << endl;
+	cin >> mes;
+	cout << "ano" << endl;
+	cin >> ano;
+
+	if(dia < 32 && dia > 0 && mes < 13 && mes > 0 && ano > 1921 && ano < 2022)
+	{
+		break;
+	}
+	else
+	{
+		cout << "valores invalidos, tente novamente." << endl;
+	}
+}
