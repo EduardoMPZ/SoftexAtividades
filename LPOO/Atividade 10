@@ -1,0 +1,44 @@
+Faça uma função calculadora de dois números com três parâmetros: os dois primeiros serão os números da operação e o terceiro será a entrada que definirá a operação a ser executada. Considera a seguinte definição:
+1. Soma
+2. Subtração
+3. Multiplicação
+4. Divisão
+
+Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+float num1, num2, num3;
+
+cout << "Digite o primeiro numero: " << endl;
+cin >> num1;
+cout << "Digite o segundo numero: " << endl;
+cin >> num2;
+
+cout << "escolha uma operação:" << endl << " 1. Soma\n 2. Subtração\n 3. Multiplicação\n 4. Divisão" << endl;
+cin >> num3;
+
+switch(num3) {
+  case 1:
+    cout << "A soma e: " << num1 + num2 << endl;
+    break;
+  case 2:
+    cout << "A subtracao e: " << num1 - num2 << endl;
+    break;
+  case 3:
+    cout << "O produto e: " << num1 * num2 << endl;
+    break;
+  case 4:
+    if(num2 =! 0)
+    cout << "A divisao e: " << num1 / num2 << endl;
+    break;
+  defaul:
+}
+
+
+   
+
+
+
