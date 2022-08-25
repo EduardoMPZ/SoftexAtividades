@@ -1,0 +1,25 @@
+Faça um algoritmo de ordenação utilizando o método insertion sort.
+Crie um método que execute as seguintes operações:
+
+- Tamanho do vetor: 30;
+- Utilize números ímpares;
+- Opere em ordem crescente.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+int[30] values = { 17, 3, 77, 41, 12071 , 133, 55, 53, 79, 95, 71, 99751, 157 , 135, 795, 5, 3, 1, 9, 7, 157, 175, 48263, 845, 2347, 869, 129, 8453, 1459};
+
+for (int i = 1; i < values.length; i++) { 
+	
+	int j = i;
+
+	while (j > 0 && values[j] < values[j-1]) {
+		int aux = values[j];
+		values[j] = values[j - 1];
+		values[j - 1] = aux;
+		j -= 1;
+	}
+
+}	
