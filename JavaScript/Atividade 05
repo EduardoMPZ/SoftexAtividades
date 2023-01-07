@@ -1,0 +1,67 @@
+Com os conceitos aprendidos, crie um programa de calculadora que: 
+
+receba dois valores, que devem ser salvos em variáveis; 
+o usuário deve colocar qual operador ele vai utilizar por meio dos símbolos aritméticos; 
+com os dois valores e o operador definido, o programa deve fazer a operação e retornar o resultado; 
+se houver divisão, você deve retornar o resultado e a sobra, caso haja alguma. 
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <title>Page Title</title>
+    <script>
+      function Calcular(){
+        var num01 = document.getElementById("v01").value;
+        var num02 = document.getElementById("v02").value;
+        var op = document.getElementById("op");
+
+        if(op.value == '+')
+        {
+          document.getElementById("Resultado").innerHTML = Number(num01) + Number(num02);
+        }
+        else if(op.value == '-')
+        {
+          document.getElementById("Resultado").innerHTML = Number(num01) - Number(num02);
+        }
+        else if(op.value == '/')
+        {
+          document.getElementById("Resultado").innerHTML = Number(num01) / Number(num02);
+          document.getElementById("r").innerHTML = Number(num01) % Number(num02);
+        }
+        else if(op.value == '*')
+        {
+          document.getElementById("Resultado").innerHTML = Number(num01) * Number(num02);
+        }
+      };
+      
+    </script>
+
+  </head>
+
+  <body>
+    <h1>Teste de Codigo Javascript</h1>
+
+    <label for="fname">Primeiro Número:</label>
+    <input id = "v01"/><br>
+
+    <label for="fname">Segundo Número:</label>
+    <input id = "v02"/><br>
+
+    <label for="fname">Operação:</label><br>
+    <input id = "op"></input><br>
+
+    <button onclick="Calcular()">Calcular</button><br><br>
+
+    <output id="Resultado">Resultado:</output><br><br>
+
+    <output id="r">Resto:</output><br><br>
+
+  </body>
+
+</html>

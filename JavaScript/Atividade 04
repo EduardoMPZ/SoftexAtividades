@@ -1,0 +1,15 @@
+﻿Pesquise sobre padrões de projeto e escolha um para apresentar e descrever o seu funcionamento. Além disso, explique quais as vantagens e desvantagens comparados a outros e mostre suas referências.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo. 
+
+Resposta:
+
+Padrões de projeto são soluções reutilizáveis ​​para problemas comuns em projetos de software. Eles são interessantes e fascinantes para explorar em qualquer linguagem de programação.
+
+MV* Architectural Patterns
+
+Os chamados “MV * Patterns” são muito comuns no back-end desde o século 
+passado. São arquiteturas que essencialmente define as camadas e 
+responsabilidades de cada uma na construção da sua aplicação. Estes 
+padrões também são comumente usados no front-end através de 
+Frameworks como o Angular, Vue e outros.
