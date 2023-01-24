@@ -45,7 +45,7 @@ Resposta:
   </head>
 
   <body>
-    <h1>Teste de Codigo Javascript</h1>
+    <h1>Calculadora</h1>
 
     <label for="fname">Primeiro Número:</label>
     <input id = "v01"/><br>

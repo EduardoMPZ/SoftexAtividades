@@ -1,0 +1,102 @@
+Crie dois códigos de sistema de notas para uma escola. O primeiro código deve ser um programa que informa se o aluno reprovou, ou não, com base nas três notas que ele adicionou ao programa. Utilize, no mínimo, um operador de atribuição e um operador ternário. 
+O segundo código é um programa que o aluno deve escrever duas notas e o retorno informa a nota mínima que ele deve tirar na próxima prova para poder passar com nota sete.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta: 
+
+Código 01
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <title>Page Title</title>
+    <script>
+      function Calcular(){
+        var num01 = document.getElementById("v01").value;
+        var num02 = document.getElementById("v02").value;
+        var num03 = document.getElementById("v03").value;
+        var media = document.getElementById("media").value;
+
+        if(((Number(num01) + Number(num02) + Number(num03)) / 3) >= (Number(media)))
+        {
+          document.getElementById("Resultado").innerHTML = "Aprovado";
+        }
+        else
+        {
+          document.getElementById("Resultado").innerHTML = "Reprovado"; 
+        }
+      };
+      
+    </script>
+
+  </head>
+
+  <body>
+    <h1>Aprovado ou reprovado</h1>
+
+    <label for="fname">Nota 1:</label>
+    <input id = "v01"/><br>
+
+    <label for="fname">Nota 2:</label>
+    <input id = "v02"/><br>
+
+    <label for="fname">Nota 3:</label>
+    <input id = "v03"/><br>
+
+    <label for="fname">Média:</label>
+    <input id = "media"/><br>
+
+    <button onclick="Calcular()">Calcular</button><br><br>
+
+    <output id="Resultado">Resultado:</output><br><br>
+
+  </body>
+
+</html>
+
+
+
+Código 02:
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <title>Page Title</title>
+    <script>
+      function Calcular(){
+        var num01 = document.getElementById("v01").value;
+        var num02 = document.getElementById("v02").value;
+        var media = document.getElementById("media").value;
+
+        document.getElementById("Resultado").innerHTML = ((3 * Number(media)) -  Number(num02) - Number(num01));
+      };
+      
+    </script>
+
+  </head>
+
+  <body>
+    <h1>Terceira nota minima para passar</h1>
+
+    <label for="fname">Nota 1:</label>
+    <input id = "v01"/><br>
+
+    <label for="fname">Nota 2:</label>
+    <input id = "v02"/><br>
+
+    <label for="fname">Média:</label>
+    <input id = "media"/><br>
+
+    <button onclick="Calcular()">Calcular</button><br><br>
+
+    <output id="Resultado">Resultado:</output><br><br>
+
+  </body>
+
+</html>
+
