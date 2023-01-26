@@ -1,0 +1,33 @@
+Desenvolva um código e crie nele:
+
+- um objeto com, no mínimo, três propriedades;
+- um array de tamanho três no mínimo;
+- duas funções, a primeira lista as propriedades do objeto e a segunda, os elementos do array.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+let objeto = {
+    propriedade1: "valor1",
+    propriedade2: "valor2",
+    propriedade3: "valor3"
+};
+
+let array = ["elemento1", "elemento2", "elemento3"];
+
+function listarPropriedades() {
+    for (let propriedade in objeto) {
+        console.log(propriedade + ": " + objeto[propriedade]);
+    }
+}
+
+function listarElementos() {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+}
+
+listarPropriedades();
+console.log("\n");
+listarElementos();

@@ -1,0 +1,101 @@
+Crie exemplos de utilização das tags mais comuns na HTML: metadados, separação de conteúdo, texto, imagem e formulário. É necessário pelo menos dois exemplos de cada tipo.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo. 
+
+Resposta:
+
+
+Metadados:
+
+1 - Utilizando a tag <meta> para definir a descrição da página:
+
+<head>
+  <meta name="description" content="Este é um exemplo de uma página de descrição">
+</head>
+
+2 - Utilizando a tag <meta> para definir as palavras-chave da página:
+
+<head>
+  <meta name="keywords" content="exemplo, página, HTML, metadados">
+</head>
+
+
+Separação de Conteúdo:
+
+1 - Utilizando a tag <div> para criar uma seção de conteúdo:
+
+<body>
+  <div> Conteúdo da seção </div>
+</body>
+
+
+2 - Utilizando a tag <section> para criar uma seção de conteúdo com título:
+
+<body>
+  <section>
+    <h1> Título da seção </h1>
+    <p> Conteúdo da seção </p>
+  </section>
+</body>
+
+
+Texto:
+
+1 - Utilizando a tag <p> para criar um parágrafo:
+
+<body>
+  <p> Este é um exemplo de um parágrafo </p>
+</body>
+
+2 - Utilizando a tag <h1> para criar um título:
+
+<body>
+  <h1> Este é um exemplo de um título </h1>
+</body>
+
+
+Imagem:
+
+1 - Utilizando a tag <img> para inserir uma imagem:
+
+<body>
+  <img src="caminho/da/imagem.jpg" alt="descrição da imagem">
+</body>
+
+2 - Utilizando a tag <picture> para inserir imagens em diferentes resoluções:
+
+<body>
+  <picture>
+    <source srcset="caminho/da/imagem-large.jpg" media="(min-width: 800px)">
+    <source srcset="caminho/da/imagem-medium.jpg" media="(min-width: 400px)">
+    <img src="caminho/da/imagem-small.jpg" alt="descrição da imagem">
+  </picture>
+</body>
+
+
+Formulário:
+
+1 - Utilizando a tag <form> para criar um formulário de contato:
+
+<body>
+  <form action="enviar-mensagem.php" method="post">
+    <label>Nome:</label>
+    <input type="text" name="nome">
+    <label>E-mail:</label>
+    <input type="email" name="email">
+    <label>Mensagem:</label>
+    <textarea name="mensagem"></textarea>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+
+2 - Utilizando a tag `<input>` para criar uma pesquisa no site:
+
+<body>
+  <form action="resultado-pesquisa.php" method="get">
+    <label>Procurar:</label>
+    <input type="text" name="q">
+    <input type="submit" value="Pesquisar">
+  </form>
+</body>
