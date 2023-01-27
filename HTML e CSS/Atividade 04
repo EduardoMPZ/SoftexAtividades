@@ -1,0 +1,26 @@
+No último peer tutoring, você construiu uma página sobre o ponto turístico da sua cidade. Agora, você deve elaborar uma outra página que fale sobre os lugares que você mais gosta de frequentar na sua cidade. Para isso, siga os requisitos:
+
+1. crie um link que irá direcionar para essa nova página;
+2. adicione imagens sobre os lugares. 
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relógio das Flores de Garanhuns</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <h1>Relógio das Flores de Garanhuns</h1>
+    </header>
+    <p>O relógio das flores de Garanhuns é um dos principais atrativos turísticos da cidade. Ele foi construído em homenagem às flores que são cultivadas na região.</p>
+    <img src="https://i.pinimg.com/originals/fc/91/8c/fc918c3ffa687e4e939202cd4fa9ba0c.jpg" alt="relógio das flores">
+  </body>
+  <footer>
+    <p>Copyright © 2021 - Todos os direitos reservados</p>
+  </footer>
+</html>

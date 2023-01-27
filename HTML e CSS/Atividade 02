@@ -1,0 +1,32 @@
+Crie o corpo de uma página em HTML sobre lugares turísticos da Europa. Foque apenas no conteúdo da página. Adicione textos, cards, imagens etc. Use sua criatividade!
+ 
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lugares turísticos da Europa</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h1>Lugares turísticos da Europa</h1>
+  <p>A Europa é um continente repleto de história, cultura e paisagens deslumbrantes. Se você está planejando uma viagem, confira essa lista de lugares incríveis para visitar.</p>
+  <h2>Paris, França</h2>
+  <div>
+    <img src="https://f7j8i5n9.stackpathcdn.com/wp-content/uploads/2015/03/regiao-avenida-champs-elysees-paris-franca.png" alt="Paris">
+    <p>Paris, a cidade luz, é um dos destinos mais populares da Europa. Com sua arquitetura icônica, como a Torre Eiffel e Notre-Dame, e seus cafés charmosos, é fácil entender por que tantas pessoas amam esta cidade.</p>
+  </div>
+  <h2>Cinque Terre, Itália</h2>
+  <div>
+    <img src="https://www.througheternity.com/upload/CONF83/20220323/cinque_terre_header_1_-tSa-730X490.png" alt="Cinque Terre">
+    <p>Cinque Terre é uma região costeira no noroeste da Itália, composta por cinco pequenas aldeias coloridas. É um lugar perfeito para caminhar, desfrutar da natureza e experimentar a culinária local.</p>
+  </div>
+  <h2>Amsterdã, Países Baixos</h2>
+  <div>
+    <img src="https://turismo.eurodicas.com.br/wp-content/uploads/2020/01/roteiro-amsterdam-1.jpg" alt="Amsterdã">
+    <p>Amsterdã é uma cidade cosmopolita, famosa por sua arquitetura, suas galerias de arte e sua vida noturna animada. Não deixe de passear pelos seus canais e visitar o Museu Van Gogh.</p>
+  </div>
+</body>
+</html>
