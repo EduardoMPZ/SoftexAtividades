@@ -1,0 +1,56 @@
+Agora que você já aprendeu as propriedades básicas de CSS, aprimore o código HTML desenvolvido na aula anterior. Para isso, aplique estilos na página criada.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.   
+
+Resposta:
+
+arquivo html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fonte Luminosa de Garanhuns</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fonte Luminosa de Garanhuns</h1>
+    </header>
+    <p>A Fonte Luminosa de Garanhuns é um dos principais atrativos turísticos da cidade. Ela é uma das mais belas fontes de água dançante do país, e é iluminada à noite, proporcionando um espetáculo de luz e som.</p>
+    <img src="images/fonte-luminosa.jpg" alt="Fonte Luminosa de Garanhuns">
+    <img src="images/fonte-noite.jpg" alt="Fonte Luminosa à noite">
+  </body>
+  <footer>
+    <p>Copyright © 2021 - Todos os direitos reservados</p>
+  </footer>
+</html>
+
+
+arquivo css
+
+body {
+  font-family: Arial, sans-serif; /* define a fonte de texto */
+  background-color: #F5F5DC; /* define a cor de fundo */
+}
+
+header h1 {
+  text-align: center; /* centraliza o texto */
+  color: #8B0000; /* define a cor do texto */
+  text-shadow: 2px 2px #DCDCDC; /* adiciona sombra ao texto */
+}
+
+p {
+  line-height: 1.5; /* define o espaçamento entre as linhas */
+  text-indent: 50px; /* define a indentação do texto */
+}
+
+img {
+  max-width: 100%; /* impede que a imagem seja maior do que a largura da tela */
+}
+
+footer {
+  text-align: center; /* centraliza o texto */
+  background-color: #DCDCDC; /* define a cor de fundo */
+  padding: 10px; /* adiciona espaçamento interno */
+}
