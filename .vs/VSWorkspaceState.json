@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HTML e CSS",
-    "\\JavaScript",
-    "\\LPOO"
+    "\\React",
+    "\\React\\reactproject1",
+    "\\React\\reactproject1\\public",
+    "\\React\\reactproject1\\src"
   ],
-  "SelectedNode": "\\HTML e CSS\\Atividade 06",
+  "SelectedNode": "\\React\\reactproject1\\reactproject1.sln",
   "PreviewInSolutionExplorer": false
 }
