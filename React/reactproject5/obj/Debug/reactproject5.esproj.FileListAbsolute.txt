@@ -1,0 +1,2 @@
+C:\Users\edu70\OneDrive\Área de Trabalho\SoftexAtividades\React\reactproject5\obj\Debug\reactproject5.esproj.SuggestedBindingRedirects.cache
+C:\Users\edu70\OneDrive\Área de Trabalho\SoftexAtividades\React\reactproject5\obj\Debug\reactproject5.esproj.CoreCompileInputs.cache
