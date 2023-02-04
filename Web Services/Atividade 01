@@ -5,3 +5,39 @@ Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe
 
 Resposta:
 
+Vamos criar uma classe para representar o webservice;
+
+class WebService :
+{
+private:
+	int ID[Numero de clientes];
+	int keys[Numero de clientes];
+	XML ClientInfo[Numero de clientes];
+
+public:
+	XML Resposta(XML Mensagem);
+};
+
+Descrevendo os metodos
+
+XML Resposta(XML Mensagem)
+{
+	XML.ID
+
+	//Verificar se o cliente existe
+
+	for(int i = 0; i <= Numero de clientes; i++)
+	{
+		if(i == Numero de clientes) return XMLClientNONEXISTENT;
+		if(ID[i] == Mensagem.ID) Break and store i in int ClientNum;
+	}
+
+	//Apos verificar se o cliente existe agora vemos se a chave esta correta para segurança de acesso
+
+	if(keys[ClientNum] == Mensagem.key) Do nothing;
+	else return IncorrectKey;
+
+	//Se passou por todos as verificações, entçao pode retornar as informações do cliente
+
+	return ClientInfo[ClientNum];
+}
