@@ -4,3 +4,21 @@ Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algu
 
 Resposta:
 
+As seis regras de uma API REST são:
+
+1 - Client-Server: a arquitetura é dividida entre cliente e servidor para que estes possam evoluir independentemente.
+
+2 - Stateless: cada requisição deve conter todas as informações necessárias para ser realizada, sem armazenamento de estado na sessão.
+
+3 - Cacheable: as respostas devem ser marcadas como cacheáveis ou não cacheáveis para que o cliente possa reutilizar o resultado se desejado.
+
+4 - Layered System: a arquitetura pode ser composta por vários sistemas intermediários (por exemplo, proxy, firewall, balanceador de carga) 
+sem que haja mudanças na resposta do serviço.
+
+5 - Code on demand (opcional): o servidor pode enviar código adicional (por exemplo, JavaScript) para ser executado pelo cliente.
+
+6 - Uniform Interface: os recursos são identificados de forma única através de URI e são manipulados através de padrões definidos (por exemplo, uso de verbos HTTP).
+
+WSDL (Web Services Description Language) é um formato XML usado para descrever serviços web. Ele especifica os endereços, operações, 
+entrada e saída dos serviços, bem como outros detalhes sobre a interface de serviços. WSDL é usado para permitir que sistemas possam
+consumir serviços web de forma automatizada.
