@@ -1,0 +1,29 @@
+
+Faça um projeto explicando como funcionam os métodos HTTP com exemplos de requisições, sua utilização e em qual momento cada um dos métodos devem ser utilizados. 
+Além disso, descreva o que é WSDL, seu significado e sua função.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+Métodos HTTP
+
+Os métodos HTTP são os comandos que especificam a ação desejada a ser realizada em uma recurso da web. Eles incluem:
+
+GET: o método GET é usado para recuperar informações de um recurso na web. Por exemplo, uma requisição GET para "https://www.example.com/users" retornaria uma lista de usuários.
+
+POST: o método POST é usado para enviar informações para um recurso na web. Por exemplo, uma requisição POST para "https://www.example.com/users" com os dados de um novo usuário criaria esse usuário.
+
+PUT: o método PUT é usado para atualizar informações de um recurso na web. Por exemplo, uma requisição PUT para "https://www.example.com/users/1" com os dados atualizados de um usuário iria atualizar esse usuário.
+
+DELETE: o método DELETE é usado para excluir um recurso na web. Por exemplo, uma requisição DELETE para "https://www.example.com/users/1" excluiria o usuário com o ID 1.
+
+Em geral, o método GET deve ser usado quando você estiver apenas buscando informações, o método POST deve ser usado quando você estiver criando um novo recurso, o método PUT deve ser usado quando você estiver atualizando um recurso existente e o método DELETE deve ser usado quando você estiver excluindo um recurso.
+
+WSDL
+
+WSDL (Web Services Description Language) é uma linguagem XML que descreve os serviços Web disponíveis em um sistema. Ele descreve o quê, onde e como o serviço Web pode ser acessado, incluindo informações sobre mensagens de entrada e saída, operações suportadas, endereços de endpoint, entre outras informações.
+
+A função principal do WSDL é ajudar as aplicações a descobrirem e se comunicarem com serviços Web, fornecendo informações claras sobre como acessar e usar o serviço. Isso permite que aplicações diferentes, mesmo que sejam escritas em diferentes linguagens de programação, possam se comunicar uns com os outros através da Web.
+
+Em resumo, o WSDL é uma ferramenta importante para a integração de aplicações e a comunicação entre serviços Web,
