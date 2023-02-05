@@ -1,0 +1,36 @@
+Demonstre como fazer as quatro operações de CRUD e suas rotas para obter o recurso de um livro que está no estoque de uma livraria. Um livro possui informações como nome, autor e ISBN.
+
+Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+Resposta:
+
+As quatro operações CRUD são Create, Read, Update e Delete. A seguir, apresentamos exemplos de como essas operações podem 
+ser implementadas em uma API REST para gerenciar livros em um estoque de uma livraria.
+
+1 Create (Criar):
+
+Rota: POST /books
+Corpo da requisição: { "name": "O Senhor dos Anéis", "author": "J.R.R. Tolkien", "ISBN": "1234567890" }
+Resposta: 201 (Criado), com o corpo da resposta contendo o livro criado, incluindo um ID gerado pelo servidor.
+
+2 Read (Ler):
+
+Rota: GET /books/:id
+Resposta: 200 (OK), com o corpo da resposta contendo o livro especificado pelo ID.
+
+3 Update (Atualizar):
+
+Rota: PUT /books/:id
+Corpo da requisição: { "name": "O Senhor dos Anéis - Edição Atualizada", "author": "J.R.R. Tolkien", "ISBN": "1234567890" }
+Resposta: 200 (OK), com o corpo da resposta contendo o livro atualizado.
+
+4 Delete (Excluir):
+
+Rota: DELETE /books/:id
+Resposta: 204 (Sem Conteúdo), sem corpo de resposta.
+Observe que essas rotas são apenas um exemplo, e que a implementação real pode variar dependendo das necessidades do projeto. 
+Além disso, outras operações e rotas também podem ser adicionadas, como a busca por livros com base em determinados critérios, por exemplo.
+
+
+
+
