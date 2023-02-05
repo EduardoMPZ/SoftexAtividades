@@ -1,0 +1,78 @@
+Faça um código para implementar o CRUD de algum recurso. Por exemplo: alunos, equipamentos ou vendas. Aponte as rotas e os retornos do status HTTP.
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.  
+
+Resposta:
+
+
+
+Você pode implementar um CRUD simples para recursos usando JavaScript e um framework back-end, como Express. Aqui está um exemplo de como implementar o CRUD para recursos de alunos:
+
+const express = require('express');
+const app = express();
+
+// Inicialize um array como um banco de dados fictício
+let students = [
+  { id: 1, name: 'John Doe', age: 25 },
+  { id: 2, name: 'Jane Doe', age: 23 },
+  { id: 3, name: 'Jim Smith', age: 27 }
+];
+
+// Obter todos os alunos
+app.get('/students', (req, res) => {
+  return res.status(200).json(students);
+});
+
+// Obter um aluno pelo ID
+app.get('/students/:id', (req, res) => {
+  let student = students.find(s => s.id === parseInt(req.params.id));
+  if (!student) {
+    return res.status(404).send('Aluno não encontrado');
+  }
+  return res.status(200).json(student);
+});
+
+// Adicionar um novo aluno
+app.post('/students', (req, res) => {
+  let student = {
+    id: students.length + 1,
+    name: req.body.name,
+    age: req.body.age
+  };
+  students.push(student);
+  return res.status(201).json(student);
+});
+
+// Atualizar um aluno pelo ID
+app.put('/students/:id', (req, res) => {
+  let student = students.find(s => s.id === parseInt(req.params.id));
+  if (!student) {
+    return res.status(404).send('Aluno não encontrado');
+  }
+  student.name = req.body.name;
+  student.age = req.body.age;
+  return res.status(200).json(student);
+});
+
+// Excluir um aluno pelo ID
+app.delete('/students/:id', (req, res) => {
+  let student = students.find(s => s.id === parseInt(req.params.id));
+  if (!student) {
+    return res.status(404).send('Aluno não encontrado');
+  }
+  let index = students.indexOf(student);
+  students.splice(index, 1);
+  return res.status(200).json(student);
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));
+
+
+As rotas são:
+
+GET /students: retorna todos os alunos
+GET /students/:id: retorna o aluno pelo ID
+POST /students: adiciona um novo aluno
+PUT /students/:id: atualiza um aluno pelo ID
+`DELETE /students/:id
